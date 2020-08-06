@@ -11,9 +11,23 @@ console.log(bikeMile);
 var jetMile = feetToMile(1000000);
 console.log(jetMile); 
 
-// function feetToMile(feet){
-//     var 
-// }
 // Problem-2 (wood calculator)
+
 // Problem-3 (brick calculator)
-// Problem-4 (find smallest value)
+
+// Problem-4 (find smallest array)
+
+var myArray = [ "mahadi", "mahadi hasan", "tamim khan", "sahid", "sahid hasan santo", "ashik", "nahid tonoy"];
+
+function tinyFriend(arr){
+  var small = arr[0];
+  for (i = 0; i < arr.length; i++){
+    if (arr[i].length < small.length){
+      small = arr[i];
+    }
+  }
+  return small;
+}
+console.log(tinyFriend(myArray));
+
+
